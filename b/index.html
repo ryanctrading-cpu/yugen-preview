@@ -670,6 +670,19 @@
   .ch-card .btn{width:100%;}
   .ch-foot{text-align:center;color:var(--grey-lt);font-size:13px;margin-top:36px;padding:0 20px;}
   @media (max-width:720px){.ch-grid{grid-template-columns:1fr;}}
+
+  /* ===== consultation CTA band ===== */
+  .consult{background:var(--paper);border-top:1px solid var(--line);padding:56px 0;}
+  .consult-inner{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap;}
+  .consult-copy{max-width:560px;}
+  .consult-copy .kicker{margin-bottom:12px;}
+  .consult-copy h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.4vw,32px);line-height:1.14;margin-bottom:12px;}
+  .consult-copy p{color:var(--grey);font-weight:300;font-size:16px;line-height:1.6;}
+  .consult-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px;flex:0 0 auto;}
+  .consult-actions .btn{white-space:nowrap;}
+  .consult-email{font-size:14.5px;color:var(--ink);letter-spacing:.02em;}
+  .consult-email:hover{color:var(--grey);}
+  @media (max-width:720px){.consult-inner{flex-direction:column;align-items:flex-start;}.consult-actions{align-self:stretch;}.consult-actions .btn{width:100%;justify-content:center;}}
 </style>
 </head>
 <body>
@@ -807,6 +820,19 @@
     <div class="insta-head"><div><p class="kicker">Síguenos</p><p class="insta-handle" id="insta-title">@yugen.skincare <span>en Instagram</span></p></div><a class="btn btn-ghost" href="https://instagram.com/yugen.skincare">Ver el perfil</a></div>
     <div class="insta-grid" aria-hidden="true"><span class="insta-tile"><img class="insta-photo" src="../assets/product-8.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="../assets/product-1.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="../assets/product-6.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="../assets/product-7.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="../assets/product-3.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="../assets/product-2.jpg" alt=""></span></div></div></section>
 </main>
+<section class="consult" aria-labelledby="consult-title">
+  <div class="wrap consult-inner">
+    <div class="consult-copy">
+      <p class="kicker">¿Hablamos?</p>
+      <h2 id="consult-title">¿Tienes dudas o te gustaría una consulta?</h2>
+      <p>Escríbe a una de nuestras expertas y con gusto te orientamos sobre tu piel y tus productos.</p>
+    </div>
+    <div class="consult-actions">
+      <a class="btn" href="https://wa.me/52XXXXXXXXXX"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Escríbenos por WhatsApp</a>
+      <a class="consult-email" href="mailto:contacto@yugen.com.mx">contacto@yugen.com.mx</a>
+    </div>
+  </div>
+</section>
 <footer class="site-foot" id="contacto">
   <div class="wrap">
     <div class="foot-grid">
