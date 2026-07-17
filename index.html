@@ -3,8 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YUGEN · Elige una versión</title>
-<meta name="description" content="Dos versiones de la página YUGEN para elegir.">
+<title>YUGEN · Cuidado de la piel</title>
+<meta name="description" content="YUGEN — cuidado de la piel natural y vegano, con respaldo médico. Hecho en México.">
+<link rel="canonical" href="https://yugen.com.mx/">
+<meta property="og:title" content="YUGEN · Cuidado de la piel">
+<meta property="og:description" content="Cuidado de la piel natural y vegano, con respaldo médico. Hecho en México.">
+<meta property="og:url" content="https://yugen.com.mx/">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -616,7 +621,7 @@
   .pd-panel{position:relative;background:var(--white);max-width:780px;width:100%;max-height:90vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 40px 90px rgba(0,0,0,.4);}
   .pd-media{position:relative;background:#f0eee9;min-height:300px;}
   .pd-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
-  .pd-media.pd-media--ph::after{content:"Foto proximamente";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#8a857c;font-size:11px;letter-spacing:.18em;text-transform:uppercase;background:linear-gradient(160deg,#efedE8,#d8d5cf);}
+  .pd-media.pd-media--ph::after{content:"Foto próximamente";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#8a857c;font-size:11px;letter-spacing:.18em;text-transform:uppercase;background:linear-gradient(160deg,#efedE8,#d8d5cf);}
   .pd-close{position:absolute;top:12px;right:12px;width:42px;height:42px;border:none;background:rgba(255,255,255,.92);font-size:24px;line-height:1;cursor:pointer;z-index:3;border-radius:50%;color:#141414;box-shadow:0 2px 10px rgba(0,0,0,.14);}
   .pd-close:hover{background:#fff;}
   .pd-body{padding:36px 32px 32px;}
@@ -625,7 +630,7 @@
   .pd-note{font-size:13px;color:#a9a49a;font-style:italic;margin-bottom:14px;}
   .pd-field{border-top:1px solid var(--line);padding:14px 0;}
   .pd-field h4{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);margin-bottom:5px;font-weight:600;}
-  .pd-field p{font-size:14.5px;color:#9a958c;font-weight:300;font-style:italic;line-height:1.55;}
+  .pd-field p{font-size:14.5px;color:#3f3f3f;font-weight:400;line-height:1.6;}
   .pd-body .btn{width:100%;margin-top:22px;}
   @media (max-width:640px){.pd-panel{grid-template-columns:1fr;}.pd-media{min-height:200px;max-height:34vh;}.pd-body{padding:26px 22px 24px;}}
   /* ===== PDP (option B product page) ===== */
@@ -635,7 +640,7 @@
   .pdp-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start;}
   .pdp-media{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,#efedE8,#d8d5cf);overflow:hidden;border:1px solid var(--line);}
   .pdp-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  .pdp-media.ph::after{content:"Foto proximamente";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#8a857c;font-size:12px;letter-spacing:.18em;text-transform:uppercase;}
+  .pdp-media.ph::after{content:"Foto próximamente";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#8a857c;font-size:12px;letter-spacing:.18em;text-transform:uppercase;}
   .pdp-info .kicker{margin-bottom:12px;}
   .pdp-info h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.6vw,44px);line-height:1.06;letter-spacing:-.01em;}
   .pdp-type{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8a8a8a;margin-top:12px;}
@@ -646,7 +651,7 @@
   .pdp-field{border-top:1px solid var(--line);padding:16px 0;}
   .pdp-field:last-child{border-bottom:1px solid var(--line);}
   .pdp-field h4{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);margin-bottom:6px;font-weight:600;}
-  .pdp-field p{font-size:14.5px;color:#9a958c;font-weight:300;font-style:italic;line-height:1.55;}
+  .pdp-field p{font-size:15px;color:#3f3f3f;font-weight:400;line-height:1.65;}
   .pdp-more{background:var(--paper);padding:60px 0;border-top:1px solid var(--line);}
   .pdp-more .kicker{margin-bottom:22px;}
   .more-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
@@ -670,30 +675,269 @@
   .ch-card .btn{width:100%;}
   .ch-foot{text-align:center;color:var(--grey-lt);font-size:13px;margin-top:36px;padding:0 20px;}
   @media (max-width:720px){.ch-grid{grid-template-columns:1fr;}}
+
+  /* ===== consultation CTA band ===== */
+  .consult{background:var(--paper);border-top:1px solid var(--line);padding:56px 0;}
+  .consult-inner{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap;}
+  .consult-copy{max-width:560px;}
+  .consult-copy .kicker{margin-bottom:12px;}
+  .consult-copy h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.4vw,32px);line-height:1.14;margin-bottom:12px;}
+  .consult-copy p{color:var(--grey);font-weight:300;font-size:16px;line-height:1.6;}
+  .consult-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px;flex:0 0 auto;}
+  .consult-actions .btn{white-space:nowrap;}
+  .consult-email{font-size:14.5px;color:var(--ink);letter-spacing:.02em;}
+  .consult-email:hover{color:var(--grey);}
+  @media (max-width:720px){.consult-inner{flex-direction:column;align-items:flex-start;}.consult-actions{align-self:stretch;}.consult-actions .btn{width:100%;justify-content:center;}}
 </style>
 </head>
 <body>
-<section class="chooser">
-  <div class="ch-head">
-    <img class="ch-logo" src="assets/logo-yugen-black.svg" alt="YUGEN">
-    <h1>Dos versiones para elegir</h1>
-    <p>Fer, armé la página en dos versiones. Las dos usan tus productos y fotos reales.</p>
-  </div>
-  <div class="ch-grid">
-    <div class="ch-card">
-      <p class="ch-tag">Opción A</p>
-      <h2>Todo en una sola página</h2>
-      <p>Todo en una sola página. Tocas un producto y su información se abre en una ventana. Un solo enlace.</p>
-      <a class="btn" href="a/">Ver Opción A</a>
-    </div>
-    <div class="ch-card">
-      <p class="ch-tag">Opción B</p>
-      <h2>Una página por producto</h2>
-      <p>Cada producto tiene su propia página, con su propio enlace.</p>
-      <a class="btn" href="b/">Ver Opción B</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#" class="wordmark" aria-label="YUGEN inicio"><img src="assets/logo-yugen-black.svg" alt="YUGEN" style="height:32px;width:auto;display:block"></a>
+    <nav class="mainnav" aria-label="Menu principal">
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotras">Nosotras</a></li>
+        <li><a href="#por-que">Por qué YUGEN</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="top-actions">
+      <a class="wa-mini" href="https://wa.me/525545647304" aria-label="Escríbenos por WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg><span>WhatsApp</span></a>
     </div>
   </div>
-  <p class="ch-foot">YUGEN · Hecho en México — versión de muestra</p>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap"><div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Cuidado de la piel · Hecho en México</p>
+      <h1 class="hero-title" id="hero-title">Piel cuidada con <em>respaldo médico</em>, no por promesas.</h1>
+      <p class="hero-sub">YUGEN nació en el consultorio. Fórmulas naturales y veganas, creadas por una médico cirujano con enfoque en medicina estética y su hermana, para cuidar tu piel y prevenir el envejecimiento por el sol.</p>
+      <a class="btn btn-light" href="https://wa.me/525545647304"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a>
+      <p class="hero-note">Atención directa. Te ayudamos a elegir lo que tu piel necesita.</p>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <img class="hero-photo" src="assets/product-8.jpg" alt="">
+      <span class="hero-photo-scrim"></span>
+      <span class="visual-tag">Rosa Mosqueta · Crema facial</span>
+    </div>
+  </div></div>
 </section>
+<section class="trust" aria-label="Valores del producto"><div class="trust-inner">
+    <span class="trust-item"><span class="dot" aria-hidden="true">🐇</span>Libre de crueldad</span>
+    <span class="trust-item"><span class="dot" aria-hidden="true">🌿</span>Vegano</span>
+    <span class="trust-item"><span class="dot" aria-hidden="true">🇲🇽</span>Hecho en México</span>
+    <span class="trust-item"><span class="dot" aria-hidden="true">✿</span>Natural</span>
+  </div></section>
+<section class="block products" id="productos" aria-labelledby="prod-title"><div class="wrap">
+  <div class="section-head"><p class="kicker">La línea</p><h2 class="section-title" id="prod-title">Pocos productos. <em>Bien hechos.</em></h2><p class="section-lead">Cada fórmula tiene un trabajo claro. Toca cualquier producto para ver el detalle.</p></div>
+  <div class="prod-grid">
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Té Verde"
+        data-name="Té Verde" data-type="Jabón facial" data-img="assets/product-1.jpg" data-wa="https://wa.me/525545647304" data-desc="Limpia suavemente la piel del rostro. Su fórmula libre de sales y parabenos ayuda a mantener el equilibrio del pH y una apariencia radiante. El té verde controla el exceso de sebo y calma el enrojecimiento. Ideal para todo tipo de piel." data-ingr="Glicerina, agua destilada, extractos naturales de té verde, vitamina E y extracto de uva extra virgen. Sin parabenos ni cloruro de sodio." data-uso="Aplicar sobre el rostro húmedo por la mañana y por la noche. Masajear suavemente hasta formar espuma y enjuagar con abundante agua. Uso diario." data-price="$200 MXN">
+        <div class="card-img"><img class="card-photo" src="assets/product-1.jpg" alt="Té Verde"></div>
+        <div class="card-body">
+          <p class="card-type">Jabón facial</p>
+          <h3 class="card-name">Té Verde</h3>
+          <p class="card-desc">Limpieza suave con té verde, vitamina E y extracto de uva. Controla el exceso de grasa y refresca.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Contorno de Ojos"
+        data-name="Contorno de Ojos" data-type="Roll-on para el contorno de ojos" data-img="assets/product-2.jpg" data-wa="https://wa.me/525545647304" data-desc="Ayuda a desinflamar, aclarar las ojeras y rejuvenecer la piel. La papa actúa como desinflamante natural que reduce las bolsas, mientras el ADN vegetal ayuda a combatir el oscurecimiento y unificar el tono de la zona. Ideal para una mirada con apariencia descansada." data-ingr="ADN vegetal, extracto de papa, colágeno, elastina, vitaminas." data-uso="Aplica una pequeña cantidad en el contorno de ojos limpio, por la mañana y por la noche. Masajea suavemente con la yema del dedo anular o con aplicador roll-on para mayor frescura." data-price="$200 MXN">
+        <div class="card-img"><img class="card-photo" src="assets/product-2.jpg" alt="Contorno de Ojos"></div>
+        <div class="card-body">
+          <p class="card-type">Roll-on para el contorno de ojos</p>
+          <h3 class="card-name">Contorno de Ojos</h3>
+          <p class="card-desc">Con extracto de papa y ADN vegetal. Desinflama, aclara ojeras y refresca la mirada.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Retinol"
+        data-name="Retinol" data-type="Sérum de noche" data-img="assets/product-3.jpg" data-wa="https://wa.me/525545647304" data-desc="Sérum de consistencia lechosa con retinol al 1%. Ayuda a reducir arrugas, mejorar la textura y tersura de la piel, desvanecer manchas (hiperpigmentación) y regular la producción de grasa, apoyando con el acné y disminuyendo la apariencia de los poros." data-ingr="Agua destilada, glicerina, aceite mineral, retinol al 1%, carbopol." data-uso="Aplicar sobre el rostro limpio por las noches, de dos a tres veces por semana, después de la limpieza facial. Uso externo únicamente." data-price="$200 MXN">
+        <div class="card-img"><img class="card-photo" src="assets/product-3.jpg" alt="Retinol"></div>
+        <div class="card-body">
+          <p class="card-type">Sérum de noche</p>
+          <h3 class="card-name">Retinol</h3>
+          <p class="card-desc">Sérum de noche con retinol al 1%. Reduce arrugas, mejora la textura y desvanece manchas.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Sérum de Vitamina B3, Ácido Hialurónico y Vitamina E"
+        data-name="Sérum de Vitamina B3, Ácido Hialurónico y Vitamina E" data-type="Sérum" data-img="assets/product-6.jpg" data-wa="https://wa.me/525545647304" data-desc="La vitamina B3 ayuda a regular el exceso de sebo, minimizar los poros, reducir las manchas y calmar la inflamación. El ácido hialurónico aporta hidratación profunda al retener agua en la piel, ayudando a alisar y rellenar las líneas de expresión. La vitamina E, un potente antioxidante, protege del daño ambiental y ayuda a regenerar la piel. Su textura ligera con FPS 15 es ideal para el uso diario." data-ingr="Agua destilada, glicerina, aceite mineral, ácido hialurónico, vitamina B3, vitamina E, colágeno hidrolizado, elastina, ácido ascórbico, carbopol y Factor de Protección Solar (FPS 15)." data-uso="Aplicar sobre la piel limpia del rostro por la mañana y por la noche, con movimientos suaves hasta su completa absorción. Puede usarse antes del maquillaje, protector solar o crema hidratante." data-price="$250 MXN">
+        <div class="card-img"><img class="card-photo" src="assets/product-6.jpg" alt="Sérum de Vitamina B3, Ácido Hialurónico y Vitamina E"></div>
+        <div class="card-body">
+          <p class="card-type">Sérum</p>
+          <h3 class="card-name">Sérum de Vitamina B3, Ácido Hialurónico y Vitamina E</h3>
+          <p class="card-desc">Vitamina B3, ácido hialurónico y vitamina E con FPS 15. Hidrata, empareja el tono y protege a diario.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Rosa Mosqueta"
+        data-name="Rosa Mosqueta" data-type="Crema líquida facial · 250 ml" data-img="assets/product-8.jpg" data-wa="https://wa.me/525545647304" data-desc="Aporta hidratación profunda y deja la piel con apariencia suave y luminosa. Ayuda a regenerar y nutrir la piel; excelente aliado antiedad que atenúa cicatrices y marcas de acné, reduce arrugas finas y unifica el tono desvaneciendo manchas." data-ingr="Rosa mosqueta, colágeno, elastina y vitamina E." data-uso="Aplicar sobre la piel limpia del rostro o cuerpo por la mañana y/o por la noche. Masajear suavemente hasta su completa absorción. Ideal como parte de tu rutina diaria de hidratación." data-price="$280 MXN">
+        <div class="card-img"><img class="card-photo" src="assets/product-8.jpg" alt="Rosa Mosqueta"></div>
+        <div class="card-body">
+          <p class="card-type">Crema líquida facial · 250 ml</p>
+          <h3 class="card-name">Rosa Mosqueta</h3>
+          <p class="card-desc">Crema líquida de rosa mosqueta con colágeno, elastina y vitamina E. Hidratación profunda y efecto antiedad.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Bloqueador de Tepezcohuite FPS 50"
+        data-name="Bloqueador de Tepezcohuite FPS 50" data-type="Protector solar" data-img="assets/product-7.jpg" data-wa="https://wa.me/525545647304" data-desc="Ayuda a proteger la piel de los efectos visibles de la exposición solar. El tepezcohuite aporta propiedades regenerativas, antimicrobianas y antiinflamatorias. Su fórmula ligera y confortable se integra fácil en tu rutina diaria de rostro o cuerpo al aire libre." data-ingr="Factor de Protección Solar 50, tepezcohuite, agua destilada, aceite mineral, salicilato de etilhexilo, TEA, estearato de glicerilo, extracto de tepezcohuite, propilenglicol, benzoato de sodio, sorbato de potasio, fragancia." data-uso="Aplica generosamente sobre la piel limpia y seca antes de la exposición al sol. Reaplica cada 2 a 4 horas, especialmente después de nadar, sudar o secarte con una toalla." data-price="$300 MXN">
+        <div class="card-img"><img class="card-photo" src="assets/product-7.jpg" alt="Bloqueador de Tepezcohuite FPS 50"></div>
+        <div class="card-body">
+          <p class="card-type">Protector solar</p>
+          <h3 class="card-name">Bloqueador de Tepezcohuite FPS 50</h3>
+          <p class="card-desc">Protector solar FPS 50 con tepezcohuite. Alta protección con sensación ligera.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Bloqueador de Zanahoria FPS 25"
+        data-name="Bloqueador de Zanahoria FPS 25" data-type="Protector solar" data-img="" data-wa="https://wa.me/525545647304" data-desc="Protege del sol y humecta la piel deshidratada. Compatible con todo tipo de piel." data-ingr="Agua destilada, metilparabeno, alcohol cetílico, aceite de zanahoria, aceite mineral, trietanolamina, ácido esteárico, multifilter, fragancia." data-uso="Aplicar sobre la piel limpia antes de la exposición al sol. De uso diario." data-price="$250 MXN">
+        <div class="card-img ph" aria-hidden="true"><div class="card-ph-note"><span class="g"></span>Foto próximamente</div></div>
+        <div class="card-body">
+          <p class="card-type">Protector solar</p>
+          <h3 class="card-name">Bloqueador de Zanahoria FPS 25</h3>
+          <p class="card-desc">Protector solar FPS 25 con aceite de zanahoria. Protege y humecta para uso diario.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+      <article class="card" role="button" tabindex="0" aria-label="Ver detalles de Jabón Nivelador de pH"
+        data-name="Jabón Nivelador de pH" data-type="Jabón facial y corporal" data-img="" data-wa="https://wa.me/525545647304" data-desc="Limpia el rostro a profundidad mientras restaura y respeta la acidez natural de la piel. Aporta hidratación, suaviza la textura y mejora la elasticidad estimulando la producción de colágeno. Mantiene el pH cutáneo en su rango óptimo, evitando irritaciones, brotes y deshidratación." data-ingr="Agua destilada, Preservaderm 100, Natrosol, Texapon Less, glicerina, ácido láctico, propilenglicol, fragancia." data-uso="Humedece la piel y aplica el jabón con movimientos suaves. Deja actuar durante dos minutos y enjuaga con abundante agua. Ideal para el uso diario en rostro o cuerpo." data-price="$200 MXN">
+        <div class="card-img ph" aria-hidden="true"><div class="card-ph-note"><span class="g"></span>Foto próximamente</div></div>
+        <div class="card-body">
+          <p class="card-type">Jabón facial y corporal</p>
+          <h3 class="card-name">Jabón Nivelador de pH</h3>
+          <p class="card-desc">Limpia a profundidad mientras respeta y restaura el pH natural de la piel.</p>
+          <div class="card-foot"><a class="btn wa-buy" href="https://wa.me/525545647304" onclick="event.stopPropagation()"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a></div>
+          <p class="card-hint">Toca para ver detalles ›</p>
+        </div>
+      </article>
+  </div>
+</div></section>
+<section class="lineband" aria-labelledby="line-title"><div class="wrap">
+    <p class="kicker">La colección</p>
+    <h2 id="line-title">Ocho productos, <em>una rutina completa.</em></h2>
+    <img class="lineband-img" src="assets/product-4.jpg" alt="La línea completa YUGEN">
+    <p class="cap">De la limpieza a la protección solar — todo hecho en México.</p>
+  </div></section>
+<section class="block nosotras" id="nosotras" aria-labelledby="nos-title"><div class="wrap"><div class="nos-grid">
+    <div class="nos-visual" aria-hidden="true"><span class="nos-cap">Las fundadoras</span><div class="sisters"><span class="sil"></span><span class="sil two"></span></div></div>
+    <div class="nos-copy">
+      <p class="kicker" style="color:#9a9a9a;">Nosotras</p>
+      <h2 class="section-title" id="nos-title">Dos hermanas, <em>un mismo cuidado.</em></h2>
+      <p>Somos dos hermanas. Una es médico cirujano con enfoque en medicina estética, y en el consultorio ve todos los días lo que el sol y el tiempo le hacen a la piel. Juntas creamos YUGEN para llevar a casa un cuidado simple y honesto, con lo que de verdad funciona.</p>
+      <p>Cada producto sale de lo que se recomienda en consulta. Nada que no usaríamos nosotras.</p>
+      <div class="founder-credit"><p class="fc-name">Dra. Maria Fernanda Horna</p><p class="fc-role">Médico Cirujano · Medicina Estética</p><p class="fc-clinic">BeautyOu — Medicina Estética</p></div>
+    </div>
+  </div></div></section>
+<section class="block ingr" id="por-que" aria-labelledby="ingr-title"><div class="wrap">
+    <div class="section-head"><p class="kicker">Por qué YUGEN</p><h2 class="section-title" id="ingr-title">Natural, y con <em>propósito.</em></h2><p class="section-lead">Cuidado auxiliar en casa. Para acompañar tu piel, no para reemplazar a tu médico.</p></div>
+    <div class="ingr-grid">
+      <div class="ingr-item"><p class="ingr-num">01</p><h3>Ingredientes naturales</h3><p>Fórmulas veganas, sin crueldad animal. Elegimos activos suaves que la piel tolera bien.</p></div>
+      <div class="ingr-item"><p class="ingr-num">02</p><h3>Cuidado preventivo</h3><p>El enfoque está en prevenir el daño del sol y el paso del tiempo, con constancia diaria.</p></div>
+      <div class="ingr-item"><p class="ingr-num">03</p><h3>Uso auxiliar</h3><p>Es un apoyo tópico para tu rutina en casa. Ante cualquier duda de tu piel, consulta a tu médico.</p></div>
+    </div></div></section>
+<section class="block insta" aria-labelledby="insta-title"><div class="wrap">
+    <div class="insta-head"><div><p class="kicker">Síguenos</p><p class="insta-handle" id="insta-title">@yugen.skincare <span>en Instagram</span></p></div><a class="btn btn-ghost" href="https://instagram.com/yugen.skincare">Ver el perfil</a></div>
+    <div class="insta-grid" aria-hidden="true"><span class="insta-tile"><img class="insta-photo" src="assets/product-8.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="assets/product-1.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="assets/product-6.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="assets/product-7.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="assets/product-3.jpg" alt=""></span><span class="insta-tile"><img class="insta-photo" src="assets/product-2.jpg" alt=""></span></div></div></section>
+</main>
+<section class="consult" aria-labelledby="consult-title">
+  <div class="wrap consult-inner">
+    <div class="consult-copy">
+      <p class="kicker">¿Hablamos?</p>
+      <h2 id="consult-title">¿Tienes dudas o te gustaría una consulta?</h2>
+      <p>Escríbe a una de nuestras expertas y con gusto te orientamos sobre tu piel y tus productos.</p>
+    </div>
+    <div class="consult-actions">
+      <a class="btn" href="https://wa.me/525545647304"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Escríbenos por WhatsApp</a>
+      <a class="consult-email" href="mailto:contacto@yugen.com.mx">contacto@yugen.com.mx</a>
+    </div>
+  </div>
+</section>
+<footer class="site-foot" id="contacto">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <p class="foot-word"><img src="assets/logo-yugen-white.svg" alt="YUGEN" style="height:42px;width:auto;display:block"></p>
+        <p class="foot-blurb">Cuidado de la piel natural y vegano, con respaldo médico. Hecho en México.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Productos</h4>
+        <a href="producto/te-verde.html">Té Verde</a>
+        <a href="producto/contorno-de-ojos.html">Contorno de Ojos</a>
+        <a href="producto/retinol.html">Retinol</a>
+        <a href="producto/acido-hialuronico-vitaminas.html">Sérum de Vitamina B3, Ácido Hialurónico y Vitamina E</a>
+        <a href="producto/rosa-mosqueta.html">Rosa Mosqueta</a>
+        <a href="producto/bloqueador-solar-tepezcohuite.html">Bloqueador de Tepezcohuite FPS 50</a>
+        <a href="producto/bloqueador-solar-zanahoria.html">Bloqueador de Zanahoria FPS 25</a>
+        <a href="producto/jabon-nivelador-ph.html">Jabón Nivelador de pH</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/525545647304">WhatsApp</a>
+        <a href="mailto:contacto@yugen.com.mx">contacto@yugen.com.mx</a>
+        <a href="https://instagram.com/yugen.skincare">@yugen.skincare</a>
+        <a class="foot-wa" href="https://wa.me/525545647304"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Escríbenos</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 YUGEN. Hecho en México.</span>
+      <span>Producto de cuidado auxiliar. No sustituye tratamiento médico.</span>
+    </div>
+  </div>
+</footer>
+<div class="pd-modal" id="pdModal" hidden>
+  <div class="pd-backdrop" data-close></div>
+  <div class="pd-panel" role="dialog" aria-modal="true" aria-labelledby="pdName">
+    <button class="pd-close" data-close aria-label="Cerrar">&times;</button>
+    <div class="pd-media" id="pdMedia"><img id="pdImg" src="" alt=""></div>
+    <div class="pd-body">
+      <p class="pd-type" id="pdType"></p><h3 class="pd-name" id="pdName"></h3>
+      <div class="pd-field"><h4>Descripción</h4><p id="pdDesc"></p></div>
+      <div class="pd-field"><h4>Ingredientes</h4><p id="pdIngr"></p></div>
+      <div class="pd-field"><h4>Modo de uso</h4><p id="pdUso"></p></div>
+      <div class="pd-field"><h4>Precio</h4><p id="pdPrice"></p></div>
+      <a class="btn" id="pdWa" href="https://wa.me/525545647304"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm4.4 12c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5s-.5-1.3-.7-1.8-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3A2.9 2.9 0 0 0 6.5 10c0 1.7 1.3 3.4 1.5 3.6s2.5 3.8 6 5.1c1.6.6 2 .5 2.4.5.6 0 1.7-.7 2-1.4.2-.6.2-1.2.1-1.3s-.2-.1-.4-.2Z"/></svg>Comprar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var modal=document.getElementById('pdModal');
+  var img=document.getElementById('pdImg'), media=document.getElementById('pdMedia');
+  var typeEl=document.getElementById('pdType'), nameEl=document.getElementById('pdName'), wa=document.getElementById('pdWa');
+  var descEl=document.getElementById('pdDesc'), ingrEl=document.getElementById('pdIngr'), usoEl=document.getElementById('pdUso'), priceEl=document.getElementById('pdPrice');
+  var pushed=false;
+  function open(c){
+    nameEl.textContent=c.getAttribute('data-name'); typeEl.textContent=c.getAttribute('data-type');
+    descEl.textContent=c.getAttribute('data-desc')||''; ingrEl.textContent=c.getAttribute('data-ingr')||'';
+    usoEl.textContent=c.getAttribute('data-uso')||''; priceEl.textContent=c.getAttribute('data-price')||'';
+    var src=c.getAttribute('data-img');
+    if(src){img.src=src; img.alt=c.getAttribute('data-name'); img.style.display=''; media.classList.remove('pd-media--ph');}
+    else{img.removeAttribute('src'); img.style.display='none'; media.classList.add('pd-media--ph');}
+    wa.href=c.getAttribute('data-wa')||'https://wa.me/525545647304';
+    modal.hidden=false; document.body.style.overflow='hidden';
+    if(!pushed){ history.pushState({pd:1},''); pushed=true; }
+  }
+  function hide(){ modal.hidden=true; document.body.style.overflow=''; }
+  function close(){ if(pushed){ pushed=false; history.back(); } else { hide(); } }
+  window.addEventListener('popstate', function(){ if(!modal.hidden){ pushed=false; hide(); } });
+  document.querySelectorAll('.pd-modal [data-close]').forEach(function(el){ el.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click', function(e){ if(e.target.closest('.wa-buy')) return; open(c); });
+    c.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); open(c); } });
+  });
+})();
+</script>
 </body>
 </html>
